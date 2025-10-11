@@ -33,10 +33,10 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Get in <span className="text-accent">Touch</span>
+            Wasiliana <span className="text-accent">Nasi</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            Questions? We're here to help. Reach out and we'll get back to you soon.
           </p>
         </div>
 

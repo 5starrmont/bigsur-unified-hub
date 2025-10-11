@@ -8,25 +8,25 @@ import accommodationImg from "@/assets/accommodation.jpg";
 const Services = () => {
   const services = [
     {
-      title: "Premium Gym",
-      description: "State-of-the-art fitness equipment, expert trainers, and diverse classes to help you achieve your fitness goals.",
+      title: "Fitness Center",
+      description: "Stay active with our growing collection of equipment and friendly trainers ready to guide your fitness journey.",
       icon: Dumbbell,
       image: gymImg,
-      features: ["Personal Training", "Group Classes", "Modern Equipment", "Flexible Memberships"],
+      features: ["Cardio & Weights", "Group Sessions", "Flexible Hours", "Affordable Rates"],
     },
     {
-      title: "Fine Dining",
-      description: "Experience culinary excellence with our carefully curated menu, featuring local and international cuisine.",
+      title: "Restaurant",
+      description: "Enjoy delicious local and continental dishes prepared fresh. A perfect spot for meals with family and friends.",
       icon: UtensilsCrossed,
       image: restaurantImg,
-      features: ["Fresh Ingredients", "Expert Chefs", "Diverse Menu", "Private Dining"],
+      features: ["Local Flavors", "Fresh Daily", "Family Friendly", "Takeaway Available"],
     },
     {
-      title: "Luxury Accommodation",
-      description: "Relax in our elegantly designed rooms and suites, offering comfort and sophistication for your stay.",
+      title: "Guest Rooms",
+      description: "Clean, comfortable rooms for short or extended stays. Experience our warm hospitality and feel at home.",
       icon: Hotel,
       image: accommodationImg,
-      features: ["Spacious Rooms", "Premium Amenities", "Room Service", "Concierge"],
+      features: ["Clean & Cozy", "Daily Housekeeping", "Wi-Fi Included", "Friendly Service"],
     },
   ];
 
@@ -35,10 +35,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Our <span className="text-accent">Services</span>
+            What We <span className="text-accent">Offer</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover the perfect combination of fitness, dining, and hospitality all under one roof.
+            Three essential services to support your lifestyle, all in one convenient location.
           </p>
         </div>
 

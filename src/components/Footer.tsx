@@ -41,8 +41,8 @@ const Footer = () => {
               The Big Sur
             </h2>
             <p className="text-primary-foreground/80 mb-4 max-w-md">
-              Your premier destination for fitness, fine dining, and luxury accommodation. 
-              Experience excellence in every aspect of your visit.
+              A growing community space for fitness, food, and rest. 
+              Join us as we build something special together.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => {

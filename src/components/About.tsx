@@ -2,12 +2,12 @@ import { CheckCircle2 } from "lucide-react";
 
 const About = () => {
   const highlights = [
-    "State-of-the-art fitness facilities",
-    "Award-winning culinary team",
-    "Luxurious accommodation",
-    "Exceptional customer service",
-    "Premium amenities",
-    "Convenient location",
+    "Modern fitness equipment",
+    "Authentic Kenyan cuisine",
+    "Comfortable guest rooms",
+    "Friendly, welcoming staff",
+    "Growing community space",
+    "Accessible location",
   ];
 
   return (
@@ -19,15 +19,15 @@ const About = () => {
               About <span className="text-accent">The Big Sur</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              The Big Sur is a premier destination that seamlessly integrates world-class fitness facilities, 
-              exceptional dining experiences, and luxury accommodation. Our mission is to provide a 
-              comprehensive lifestyle solution where you can pursue your fitness goals, enjoy gourmet meals, 
-              and relax in comfort—all in one convenient location.
+              The Big Sur is a new community hub bringing together fitness, dining, and accommodation services 
+              under one roof. We're just getting started, but our vision is clear: to create a welcoming space 
+              where locals and visitors can work out, enjoy good food, and find comfortable lodging—all without 
+              having to go far.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We believe in creating an environment that caters to every aspect of your wellbeing. 
-              Whether you're here for a workout, a memorable meal, or a restful stay, our dedicated 
-              team is committed to exceeding your expectations.
+              We're a small but passionate team building something special for our community. Every member, 
+              guest, and visitor helps us grow and improve. Come experience genuine Kenyan hospitality and 
+              be part of our journey from the beginning.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               {highlights.map((highlight, index) => (
@@ -44,16 +44,16 @@ const About = () => {
               <div className="w-full h-full bg-card rounded-xl flex items-center justify-center p-8">
                 <div className="text-center space-y-8">
                   <div className="space-y-2">
-                    <div className="text-6xl font-bold text-accent">10+</div>
-                    <div className="text-muted-foreground">Years of Excellence</div>
+                    <div className="text-6xl font-bold text-accent">2024</div>
+                    <div className="text-muted-foreground">Newly Opened</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="text-6xl font-bold text-accent">5000+</div>
-                    <div className="text-muted-foreground">Happy Members</div>
+                    <div className="text-6xl font-bold text-accent">3in1</div>
+                    <div className="text-muted-foreground">Services Combined</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="text-6xl font-bold text-accent">24/7</div>
-                    <div className="text-muted-foreground">Available Service</div>
+                    <div className="text-6xl font-bold text-accent">100%</div>
+                    <div className="text-muted-foreground">Community Focused</div>
                   </div>
                 </div>
               </div>

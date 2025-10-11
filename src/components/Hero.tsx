@@ -19,17 +19,17 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight">
-            Welcome to <span className="text-accent">The Big Sur</span>
+            Karibu <span className="text-accent">The Big Sur</span>
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-2xl mx-auto">
-            Experience the perfect blend of fitness, dining, and luxury accommodation in one exceptional destination.
+            Your new community hub for fitness, good food, and comfortable stays in the heart of Kenya.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
               className="bg-accent hover:bg-accent/90 text-accent-foreground group"
             >
-              Explore Our Services
+              Discover What We Offer
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
@@ -37,7 +37,7 @@ const Hero = () => {
               variant="outline"
               className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
             >
-              Book Your Visit
+              Visit Us Today
             </Button>
           </div>
         </div>
