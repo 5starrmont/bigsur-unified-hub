@@ -1,9 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Dumbbell, UtensilsCrossed, Hotel, ArrowRight } from "lucide-react";
-import gymImg from "@/assets/gym.jpg";
-import restaurantImg from "@/assets/restaurant.jpg";
-import accommodationImg from "@/assets/accommodation.jpg";
+import buildingImg from "@/assets/bigsur-exterior.jpg";
 
 const Services = () => {
   const services = [
@@ -11,21 +9,21 @@ const Services = () => {
       title: "Fitness Center",
       description: "Stay active with our growing collection of equipment and friendly trainers ready to guide your fitness journey.",
       icon: Dumbbell,
-      image: gymImg,
+      image: buildingImg,
       features: ["Cardio & Weights", "Group Sessions", "Flexible Hours", "Affordable Rates"],
     },
     {
       title: "Restaurant",
       description: "Enjoy delicious local and continental dishes prepared fresh. A perfect spot for meals with family and friends.",
       icon: UtensilsCrossed,
-      image: restaurantImg,
+      image: buildingImg,
       features: ["Local Flavors", "Fresh Daily", "Family Friendly", "Takeaway Available"],
     },
     {
       title: "Guest Rooms",
       description: "Clean, comfortable rooms for short or extended stays. Experience our warm hospitality and feel at home.",
       icon: Hotel,
-      image: accommodationImg,
+      image: buildingImg,
       features: ["Clean & Cozy", "Daily Housekeeping", "Wi-Fi Included", "Friendly Service"],
     },
   ];
