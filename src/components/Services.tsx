@@ -29,54 +29,71 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-secondary/30">
+    <section id="services" className="py-32 bg-gradient-to-b from-background via-secondary/20 to-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            What We <span className="text-accent">Offer</span>
+        <div className="text-center mb-20 space-y-6 max-w-3xl mx-auto">
+          <div className="inline-block px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
+            <span className="text-sm font-semibold text-accent tracking-wide uppercase">Our Services</span>
+          </div>
+          <h2 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
+            Everything You Need,{" "}
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              One Place
+            </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Three essential services to support your lifestyle, all in one convenient location.
+          <p className="text-xl text-muted-foreground leading-relaxed">
+            Three essential services designed to enhance your daily life in Kenya
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <Card 
                 key={index} 
-                className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-accent overflow-hidden"
+                className="group relative overflow-hidden border-0 shadow-md hover:shadow-2xl transition-all duration-500 bg-card hover:-translate-y-2"
               >
-                <div className="relative h-64 overflow-hidden">
+                {/* Image Section */}
+                <div className="relative h-72 overflow-hidden">
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
-                  <div className="absolute bottom-4 left-4 p-3 bg-accent rounded-full">
-                    <Icon className="h-6 w-6 text-accent-foreground" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+                  
+                  {/* Floating Icon */}
+                  <div className="absolute top-6 right-6 p-4 bg-accent/90 backdrop-blur-sm rounded-2xl shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                    <Icon className="h-7 w-7 text-white" />
+                  </div>
+                  
+                  {/* Title Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-3xl font-bold text-white mb-2">{service.title}</h3>
                   </div>
                 </div>
-                <CardHeader>
-                  <CardTitle className="text-2xl">{service.title}</CardTitle>
-                  <CardDescription className="text-base">
+
+                {/* Content Section */}
+                <CardContent className="p-6 space-y-6">
+                  <p className="text-muted-foreground leading-relaxed">
                     {service.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <ul className="space-y-2">
+                  </p>
+                  
+                  <ul className="space-y-3">
                     {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-sm text-muted-foreground">
-                        <div className="w-1.5 h-1.5 rounded-full bg-accent mr-2" />
+                      <li key={idx} className="flex items-center text-sm font-medium text-foreground">
+                        <div className="w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center mr-3 flex-shrink-0">
+                          <div className="w-2 h-2 rounded-full bg-accent" />
+                        </div>
                         {feature}
                       </li>
                     ))}
                   </ul>
+                  
                   <Button 
-                    variant="outline" 
-                    className="w-full group/btn"
+                    variant="ghost" 
+                    className="w-full group/btn hover:bg-accent/10 font-semibold text-accent hover:text-accent"
                   >
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />

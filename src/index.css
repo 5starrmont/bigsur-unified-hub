@@ -9,80 +9,96 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 25 45% 20%;
-
+    --foreground: 20 20% 10%;
     --card: 0 0% 100%;
-    --card-foreground: 25 45% 20%;
-
+    --card-foreground: 20 20% 10%;
     --popover: 0 0% 100%;
-    --popover-foreground: 25 45% 20%;
-
-    --primary: 25 45% 35%;
+    --popover-foreground: 20 20% 10%;
+    
+    /* Rich, modern African-inspired palette */
+    --primary: 18 65% 45%;
     --primary-foreground: 0 0% 98%;
-
-    --secondary: 35 50% 92%;
-    --secondary-foreground: 25 45% 20%;
-
-    --muted: 35 50% 92%;
-    --muted-foreground: 25 20% 50%;
-
-    --accent: 14 90% 55%;
+    --secondary: 35 40% 92%;
+    --secondary-foreground: 20 20% 10%;
+    --muted: 35 20% 96%;
+    --muted-foreground: 20 10% 45%;
+    --accent: 28 90% 55%;
     --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 84% 60%;
+    
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-
-    --border: 35 30% 85%;
-    --input: 35 30% 85%;
-    --ring: 25 45% 35%;
-
-    --radius: 0.5rem;
-
-    /* African-inspired design tokens */
-    --terracotta: 14 90% 55%;
-    --earth-brown: 25 45% 35%;
-    --savanna-green: 90 40% 45%;
-    --warm-sand: 35 50% 70%;
-    --sunset-orange: 25 85% 60%;
+    --border: 20 15% 88%;
+    --input: 20 15% 88%;
+    --ring: 18 65% 45%;
+    --radius: 0.75rem;
     
-    --gradient-hero: linear-gradient(135deg, hsl(25 45% 35%) 0%, hsl(14 90% 55%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(14 90% 55%) 0%, hsl(25 85% 60%) 100%);
-    --gradient-overlay: linear-gradient(180deg, rgba(86, 57, 40, 0.85) 0%, rgba(86, 57, 40, 0.4) 100%);
+    /* Modern design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(18 65% 45%), hsl(28 90% 55%));
+    --gradient-secondary: linear-gradient(180deg, hsl(0 0% 100%), hsl(35 40% 98%));
+    --gradient-overlay: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.12);
+    --shadow-accent: 0 8px 30px hsla(28, 90%, 55%, 0.25);
     
-    --shadow-warm: 0 10px 40px -10px hsl(14 90% 55% / 0.3);
-    --shadow-earth: 0 0 30px hsl(25 45% 35% / 0.2);
+    --chart-1: 18 65% 45%;
+    --chart-2: 28 90% 55%;
+    --chart-3: 90 40% 45%;
+    --chart-4: 35 50% 70%;
+    --chart-5: 20 45% 35%;
     
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 20 20% 10%;
+    --sidebar-primary: 18 65% 45%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 35 40% 95%;
+    --sidebar-accent-foreground: 20 20% 10%;
+    --sidebar-border: 20 15% 88%;
+    --sidebar-ring: 18 65% 45%;
   }
 
   .dark {
-    --background: 25 45% 10%;
+    --background: 20 20% 8%;
     --foreground: 0 0% 98%;
-
-    --card: 25 45% 15%;
+    --card: 20 15% 12%;
     --card-foreground: 0 0% 98%;
-
-    --popover: 25 45% 15%;
+    --popover: 20 15% 12%;
     --popover-foreground: 0 0% 98%;
-
-    --primary: 14 90% 55%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 25 45% 25%;
+    --primary: 28 90% 55%;
+    --primary-foreground: 20 20% 8%;
+    --secondary: 20 15% 18%;
     --secondary-foreground: 0 0% 98%;
-
-    --muted: 25 45% 25%;
-    --muted-foreground: 35 20% 65%;
-
-    --accent: 14 90% 55%;
-    --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 63% 31%;
+    --muted: 20 15% 15%;
+    --muted-foreground: 20 10% 65%;
+    --accent: 28 90% 55%;
+    --accent-foreground: 20 20% 8%;
+    --destructive: 0 62.8% 50.6%;
     --destructive-foreground: 0 0% 98%;
-
-    --border: 25 45% 25%;
-    --input: 25 45% 25%;
-    --ring: 14 90% 55%;
+    --border: 20 15% 20%;
+    --input: 20 15% 20%;
+    --ring: 28 90% 55%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(28 90% 55%), hsl(18 65% 45%));
+    --gradient-secondary: linear-gradient(180deg, hsl(20 20% 8%), hsl(20 15% 12%));
+    --gradient-overlay: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.4);
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.5);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.6);
+    --shadow-accent: 0 8px 30px hsla(28, 90%, 55%, 0.4);
+    
+    --chart-1: 28 90% 55%;
+    --chart-2: 18 65% 45%;
+    --chart-3: 90 40% 55%;
+    --chart-4: 35 50% 60%;
+    --chart-5: 160 60% 45%;
+    --sidebar-background: 20 15% 12%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 28 90% 55%;
+    --sidebar-primary-foreground: 20 20% 8%;
+    --sidebar-accent: 20 15% 18%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 20 15% 20%;
+    --sidebar-ring: 28 90% 55%;
   }
 }
 
